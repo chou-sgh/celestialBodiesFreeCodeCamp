@@ -340,6 +340,9 @@ INSERT INTO public.planet VALUES (13, 'M652-x', 692.15, 137220, 884, 94, false, 
 -- Data for Name: planet_coordinates; Type: TABLE DATA; Schema: public; Owner: freecodecamp
 --
 
+INSERT INTO public.planet_coordinates VALUES (1, 'earth-co', 'horizontal', 24.12301, 16.28774, 3);
+INSERT INTO public.planet_coordinates VALUES (2, 'jupiter-co', 'horizontal', 85.10401, 14.22774, 4);
+INSERT INTO public.planet_coordinates VALUES (3, 'saturn-co', 'horizontal', 51.04423, 3.20234, 5);
 
 
 --
@@ -372,7 +375,7 @@ SELECT pg_catalog.setval('public.moon_moon_id_seq', 20, true);
 -- Name: planet_coordinates_planet_coordinates_id_seq; Type: SEQUENCE SET; Schema: public; Owner: freecodecamp
 --
 
-SELECT pg_catalog.setval('public.planet_coordinates_planet_coordinates_id_seq', 1, false);
+SELECT pg_catalog.setval('public.planet_coordinates_planet_coordinates_id_seq', 3, true);
 
 
 --
